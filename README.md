@@ -19,17 +19,13 @@ will not complete, and so the commands will not be executed (this is also eviden
 **To Break**
 
 The example will consistently break with the following steps: 
-1. Run `echo hello` 1 time (successfully)
+1. Run `echo hello` 1 time (successfully runs)
 2. Run `echo hello` 100 times
-3. Run `echo hello` 1 time (this will only queue data, but not complete)
+3. Run `echo hello` 1 time (this will queue data, but writes will not complete)
 
 Example successful write output as in step 1 is something along the lines of 
 ```
 Enter command to run (default 'echo hello'):
-[READ] count=16 received from host total=264
-[SEND-1] completed bytes=50
-[READ] count=9 received from host total=273
-[READ] count=22 received from host total=295
 
 Enter number of times to run (default 1):
 
