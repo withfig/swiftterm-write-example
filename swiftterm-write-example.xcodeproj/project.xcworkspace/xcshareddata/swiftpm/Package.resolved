@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftTerm",
+        "repositoryURL": "https://github.com/krzyzanowskim/SwiftTerm.git",
+        "state": {
+          "branch": "krzyzanowskim/marcin/serial-send",
+          "revision": "973d62f1f96d44e50fa0bf490df9f42e316da476",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

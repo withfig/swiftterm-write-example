@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		ABAAC8FA27432B47004DCAB6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAAC8F927432B47004DCAB6 /* main.swift */; };
+		ABAAC90227432B8A004DCAB6 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = ABAAC90127432B8A004DCAB6 /* SwiftTerm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAAC90227432B8A004DCAB6 /* SwiftTerm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = "swiftterm-write-example";
+			packageProductDependencies = (
+				ABAAC90127432B8A004DCAB6 /* SwiftTerm */,
+			);
 			productName = "swiftterm-write-example";
 			productReference = ABAAC8F627432B47004DCAB6 /* swiftterm-write-example */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = ABAAC8ED27432B47004DCAB6;
+			packageReferences = (
+				ABAAC90027432B8A004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
 			productRefGroup = ABAAC8F727432B47004DCAB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,6 +293,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABAAC90027432B8A004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/SwiftTerm.git";
+			requirement = {
+				branch = "krzyzanowskim/marcin/serial-send";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABAAC90127432B8A004DCAB6 /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABAAC90027432B8A004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ABAAC8EE27432B47004DCAB6 /* Project object */;
 }
