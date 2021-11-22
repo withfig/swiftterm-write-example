@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ABAAC8FA27432B47004DCAB6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAAC8F927432B47004DCAB6 /* main.swift */; };
-		ABAAC90227432B8A004DCAB6 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = ABAAC90127432B8A004DCAB6 /* SwiftTerm */; };
+		ABAAC93F2744622B004DCAB6 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = ABAAC93E2744622B004DCAB6 /* SwiftTerm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAAC90227432B8A004DCAB6 /* SwiftTerm in Frameworks */,
+				ABAAC93F2744622B004DCAB6 /* SwiftTerm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			);
 			name = "swiftterm-write-example";
 			packageProductDependencies = (
-				ABAAC90127432B8A004DCAB6 /* SwiftTerm */,
+				ABAAC93E2744622B004DCAB6 /* SwiftTerm */,
 			);
 			productName = "swiftterm-write-example";
 			productReference = ABAAC8F627432B47004DCAB6 /* swiftterm-write-example */;
@@ -111,7 +111,7 @@
 			);
 			mainGroup = ABAAC8ED27432B47004DCAB6;
 			packageReferences = (
-				ABAAC90027432B8A004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+				ABAAC93D2744622B004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
 			);
 			productRefGroup = ABAAC8F727432B47004DCAB6 /* Products */;
 			projectDirPath = "";
@@ -295,9 +295,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ABAAC90027432B8A004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+		ABAAC93D2744622B004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krzyzanowskim/SwiftTerm.git";
+			repositoryURL = "https://github.com/sullivan-sean/SwiftTerm.git";
 			requirement = {
 				branch = "krzyzanowskim/marcin/serial-send";
 				kind = branch;
@@ -306,9 +306,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ABAAC90127432B8A004DCAB6 /* SwiftTerm */ = {
+		ABAAC93E2744622B004DCAB6 /* SwiftTerm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ABAAC90027432B8A004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			package = ABAAC93D2744622B004DCAB6 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
 			productName = SwiftTerm;
 		};
 /* End XCSwiftPackageProductDependency section */

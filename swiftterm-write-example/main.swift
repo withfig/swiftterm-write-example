@@ -32,8 +32,8 @@ public class HeadlessTerminal : TerminalDelegate, LocalProcessDelegate {
   }
 }
 
-let headless = HeadlessTerminal()
-headless.process.startProcess(executable: "/bin/bash", args: [ "--norc", "--noprofile", "--noediting"])
+let headless = HeadlessTerminal(queue: DispatchQueue.global(qos: .userInitiated))
+headless.process.startProcess(executable: "/bin/bash", args: [ "--norc", "--noprofile"])
 
 var idx = 0
 while true {
