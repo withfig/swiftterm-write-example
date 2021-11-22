@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "SwiftTerm",
-        "repositoryURL": "https://github.com/sullivan-sean/SwiftTerm.git",
+        "repositoryURL": "https://github.com/sullivan-sean/SwiftTerm",
         "state": {
-          "branch": "krzyzanowskim/marcin/serial-send",
-          "revision": "3852f3f8594d97c42e304c5a05c0fb20400bc46c",
+          "branch": "local-process-channels",
+          "revision": "be64528f5c633dec34912c61602c9800c202a314",
           "version": null
         }
       }

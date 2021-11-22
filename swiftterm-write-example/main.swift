@@ -5,7 +5,7 @@ public class HeadlessTerminal : TerminalDelegate, LocalProcessDelegate {
   public private(set) var terminal: Terminal!
   var process: LocalProcess!
   
-  public init (queue: DispatchQueue? = nil, options: TerminalOptions = TerminalOptions.default) {
+  public init (queue: DispatchQueue? = nil, sendQueue: DispatchQueue? = nil, options: TerminalOptions = TerminalOptions.default) {
       terminal = Terminal(delegate: self, options: options)
       process = LocalProcess(delegate: self, dispatchQueue: queue)
   }
@@ -32,7 +32,7 @@ public class HeadlessTerminal : TerminalDelegate, LocalProcessDelegate {
   }
 }
 
-let headless = HeadlessTerminal(queue: DispatchQueue.global(qos: .userInitiated))
+let headless = HeadlessTerminal()
 headless.process.startProcess(executable: "/bin/bash", args: [ "--norc", "--noprofile"])
 
 var idx = 0
